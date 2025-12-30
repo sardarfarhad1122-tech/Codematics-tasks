@@ -1,0 +1,102 @@
+ .main {
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    flex-direction: row;   
+}
+ .firstcontainer{
+    padding: 0%;
+    margin: 0%;
+    width: 50%;           
+    display: flex;
+    flex-direction: column;  ;  
+    align-items: center;       
+    justify-content: center;
+}   
+#logo {
+    
+    height: 150px;  
+    align-items: center;
+    justify-content: center;
+}
+.main p {
+    padding: 0%;
+    margin: 0%;
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+}
+.main h3 {
+    padding: 0%;
+    margin: 0%;
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+}
+.src{
+    height: 50px; 
+    align-items: center;
+}
+.butto {
+    padding-top: 20px;
+    width: 100%
+    display: flex;
+    flex-direction: row;
+}
+.secondcontainer {
+    padding: 0%;
+    margin: 0%;
+    width: 50%;    
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;       
+}
+.phone {
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    height: 500px;  
+    align-items: center;
+}
+.secondsec {
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    flex-direction: row;       
+}
+.firstcontainer p{
+   padding: 0%;
+    margin: 0%;
+    font-size: 20px;
+    color: #333;
+    text-align: center
+}
+.thirdsec {
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    flex-direction: row;       
+}
+.foursec {
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    flex-direction: row;       
+}
+.vector {
+    height: 80px;  
+    align-items: center;
+    justify-content: center;
+}
+.lastsec {
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;      
+}
+#appq{
+    margin-left: 10px;
+}
