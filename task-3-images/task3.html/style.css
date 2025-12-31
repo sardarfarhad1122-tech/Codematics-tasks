@@ -1,0 +1,84 @@
+#logo{
+    width: 60px
+}
+.section{
+    background-color: rgb(143, 39, 39);
+    height: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.firstcontainer{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+    gap: 0;
+}
+.firstcontainer h1{
+    padding: 0px;
+    margin: 5px;
+    font-size: 50px;
+    color: white;
+    font-style: bold;
+}
+.firstcontainer h2{
+    font-size: 30px;
+    width: 80%;
+}
+.firstcontainer p{
+    padding: 0px;
+    margin: 0px;
+    font-size: 16px;
+    width: 70%;
+}
+.secondcointainer{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+}
+.secondcointainer h2{
+    margin: 0px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+input,textarea{
+    background-color:transparent;
+    padding: 5px;
+    border: 2px solid white;
+}
+input::placeholder,textarea::placeholder{
+    color: white;
+    font-size: 10px;
+}   
+.form p{
+    padding: 0%;
+    margin: 0%;
+    color: white;
+    font-size: 14px;
+}
+.checkbox{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;}
+.checkbox label{
+    color: white;
+    font-size: 15px;
+}
+.btn{
+    background-color: white;
+    color: rgb(119, 117, 117);
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px;
+    gap: 10px;
+}
