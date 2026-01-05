@@ -1,0 +1,126 @@
+* {
+  font-family: sans-serif;
+  margin: 0px;
+}
+.aone{
+    width: 85%;
+}
+
+.firstsection {
+    background-color: rgba(105, 1, 1, 0.975);
+    padding: 50px 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: 
+    justify-content: center;
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 85%,
+        85% 100%,
+        0 100%
+    );
+}
+
+.firstsection h1 {
+    color: white;
+    font-size: 58px;
+    margin: 0;
+    padding: 0;
+}   
+.firstsection h2 {
+    color:black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 38px;
+    margin: -10px 0 0 0;
+    padding: 0;
+} 
+.firstsection p {
+    color: white;
+    font-size: 15px;
+    margin: 10px 0 0 0;
+    padding: 0;
+} 
+.logo {
+    width: 150px;
+    height: auto;
+}
+.secondsection {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    width: 100%;
+    background-color: white;
+    padding-left: 10px;
+}
+.rectangle {
+    width: 30px;
+    padding-right: 10px;
+    align-self: center;
+}
+.secondsection h1 {
+    font-family: Montserrat – Bold, sans-serif;
+    width: 90%;
+    color: black;
+    font-size: 30px;
+    
+}
+.firstcoint {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 30px;
+    padding-left: 60px;
+}
+.firstcoint h1 {
+    font-family: Montserrat – Bold, sans-serif;
+    color: black;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.secondcon{
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: center;
+    }
+
+.iconbox {
+    width: 19%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+
+}
+.photo {
+    width: 120px;
+    height: auto;
+    border-radius: 50%;
+}
+.secondcon h2 {
+    font-family: Montserrat – Bold, sans-serif;
+    color: rgb(214, 3, 3);
+    font-size: 20px;
+    margin: 10px 0 0 0;
+    padding: 0;
+    text-align: center;
+}
+.firstsectiona {
+    background-color: rgba(105, 1, 1, 0.975);
+    padding: 20px 70px;
+    color: white;
+    padding: 80px 70px 80px 70px;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: 
+    justify-content: center;
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 85%,
+        85% 100%,
+        0 100%
+    );
+}
