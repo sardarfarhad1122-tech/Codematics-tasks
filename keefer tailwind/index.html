@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Conversion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      .show {
+        display: flex !important;
+      }
+    </style>
+  </head>
+  <body class="p-0 m-0">
+    <header
+      class="header flex flex-row justify-between gap-[10px] lg:justify-between w-full overflow-hidden md:flex-row"
+    >
+      <div class="logowalasection">
+        <img
+          src="logo.png"
+          alt="logo"
+          id="logo"
+          class="w-[350px] lg:w-[700px] md:w-[450px]"
+        />
+      </div>
+      <div
+        class="numberwalasection flex flex-col justify-center p-2 lg:items-end lg:pr-[40px] md:p-[10px]"
+      >
+        <h3
+          id="aka"
+          class="text-[16px] lg:text-[30px] text-[#7b0404] underline decoration-[#8a7e7e] underline-offset-[6px] decoration-2"
+        >
+          CALL OUR OFFICES NOW!
+        </h3>
+        <p id="nikka" class="text-[19px] lg:text-[45px] pt-[5px]">
+          540.4333.69006
+        </p>
+        <p id="hhsj" class="text-[12px] lg:text-[25px]">
+          Get your Questions Answer fast
+        </p>
+      </div>
+    </header>
+
+    <nav
+      class="endi flex justify-end lg:justify-end items-center bg-[#800606] h-auto lg:h-[50px] lg:pr-[40px] overflow-hidden"
+    >
+      <button
+        class="toggle block self-end lg:hidden text-white text-[24px] bg-none border-none cursor-pointer p-2"
+        onclick="toggleMenu()"
+      >
+        ☰
+      </button>
+      <ul
+        class="menu hidden bg-[red] lg:flex flex-col lg:flex-row gap-[10px] lg:gap-[30px] list-none items-center w-full lg:w-auto bg-[#444] lg:bg-transparent"
+        id="menu"
+      >
+        <li>
+          <a
+            href="#"
+            class="text-white text-[16px] lg:text-[22px] no-underline font-sans hover:bg-gray-500 p-2 block"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="text-white text-[16px] lg:text-[22px] no-underline font-sans hover:bg-gray-500 p-2 block"
+            >Blog</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="text-white text-[16px] lg:text-[22px] no-underline font-sans hover:bg-gray-500 p-2 block"
+            >Biography</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="text-white text-[16px] lg:text-[22px] no-underline font-sans hover:bg-gray-500 p-2 block"
+            >Area we served</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="text-white text-[16px] lg:text-[22px] no-underline font-sans hover:bg-gray-500 p-2 block"
+            >Library</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="text-white text-[16px] lg:text-[22px] no-underline font-sans hover:bg-gray-500 p-2 block"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <div
+      class="firstsection flex flex-col lg:flex-row w-full gap-[20px] overflow-hidden"
+    >
+      <div class="right w-full lg:w-1/2 mt-[20px] lg:ml-[40px]">
+        <img
+          src="gurantee_banner.gif"
+          alt="img"
+          class="firstwalipic w-full h-full pt-[20px] lg:pt-0"
+        />
+      </div>
+      <div
+        class="left w-full lg:w-1/2 mt-[20px] lg:mr-[40px] bg-[url('form_bg.jpg')] bg-cover bg-center bg-no-repeat"
+      >
+        <div class="questio flex justify-between">
+          <h1
+            id="que"
+            class="bg-[#7d0606] p-[10px] text-white font-serif w-[150px] h-[40px]"
+          >
+            QUESTIONS?
+          </h1>
+          <p
+            class="paak pl-[20px] lg:pl-[60px] pt-[20px] text-[22px] lg:text-[30px] font-[400]"
+          >
+            Have a <span id="big" class="text-[#18185e] p-[15px]">QUESTION</span
+            ><br />
+            About your case?
+          </p>
+        </div>
+        <p
+          id="ptane"
+          class="p-[15px_20px] lg:p-[20px_60px] text-[#1f1f1f] font-serif"
+        >
+          Lorem ipsum dolor sit odio doloreveniet reprehenderit.
+          <span id="nasa" class="text-[blue]">540.4333.69006</span>
+        </p>
+        <div
+          class="formq flex flex-col lg:flex-row pl-[20px] lg:pl-[60px] gap-[20px]"
+        >
+          <div class="flex flex-col gap-1">
+            <label
+              >Name:<input
+                type="text"
+                class="w-[300px] lg:w-[300px] h-[30px] ml-0 lg:ml-[9px] border mt-1"
+            /></label>
+            <label
+              >Email:<input
+                type="text"
+                class="w-[300px] lg:w-[300px] h-[30px] ml-0 lg:ml-[9px] border mt-1"
+            /></label>
+            <label
+              >Phone:<input
+                type="text"
+                class="w-[300px] lg:w-[300px] h-[30px] ml-0 lg:ml-[9px] border mt-1"
+            /></label>
+          </div>
+          <div class="confidential pt-[20px]">
+            <img
+              src="confidential.png"
+              alt=""
+              class="ahas rotate-[15deg] w-[200px] pl-0 md:pl-[90px] lg:pl-0 pb-[40px] lg:pb-0"
+            />
+          </div>
+        </div>
+        <textarea
+          placeholder="tell us about your case"
+          id="textarea"
+          class="ml-[20px] lg:ml-[70px] pl-[20px] w-[90%] lg:w-[80%] h-[60px] mt-[20px] border"
+        ></textarea>
+
+        <div
+          class="nechlywala flex flex-row justify-between mr-[30px] lg:flex-row lg:justify-between ml-[20px] lg:ml-[60px] pt-[20px] pb-[20px] gap-[10px] lg:gap-0"
+        >
+          <h1
+            id="badadbtn"
+            class="font-sans text-[20px] italic font-[100] pt-[10px] text-[#454545]"
+          >
+            100% Privacy guaranteed
+          </h1>
+          <div class="btnp flex justify-end lg:w-[240px] lg:pr-[50px]">
+            <button
+              class="btnam text-white text-[18px] font-sans p-[15px] bg-[#7d0606] shadow-[0_4px_8px_rgba(0,0,0,0.3)] w-full md:w-[800px] lg:w-auto"
+            >
+              Ask Us About Your Case
+              <img src="bullet_white.gif" alt="" class="inline" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="centerwaladaba flex flex-col lg:flex-row gap-[20px] justify-between shadow-[0_6px_10px_rgba(0,0,0,0.3)] pt-[40px] mb-[40px] px-[40px] pb-[30px] lg:pb-0"
+    >
+      <div class="leftd flex flex-col gap-[10px] pt-[20px]">
+        <h1 id="kldk" class="text-[30px] text-[#1f1f1f]">
+          CHARGED WITH <span class="naka text-[#850606]">DUI?</span>
+        </h1>
+        <p id="kachra" class="text-[20px] text-[#850606]">
+          FREE CASE EVALUTION
+        </p>
+        <div class="leftmiddle flex gap-[70px] lg:gap-[15px]">
+          <div class="saja">
+            <p class="font-sans text-[#0b0b0b] font-[300] pt-[10px] w-[200px]">
+              Being charged with dui can b scary.Get the help you deserve
+            </p>
+            <p class="font-sans text-[#0b0b0b] font-[300] pt-[10px] w-[200px]">
+              Being charged with dui can b scary.Get the help you deserve
+            </p>
+          </div>
+          <img
+            src="paste_board.gif"
+            alt=""
+            id="paste_board"
+            class="w-[100px] h-[150px] lg:w-auto"
+          />
+        </div>
+        <div class="btn flex justify-end w-[200px] lg:w-[240px] lg:pr-[50px]">
+          <button
+            class="btna text-white text-[16px] font-sans p-[5px_10px] bg-[#7d0606] shadow-[0_4px_8px_rgba(0,0,0,0.3)]"
+          >
+            Click here <img src="bullet_white.gif" alt="" class="inline" />
+          </button>
+        </div>
+      </div>
+
+      <div
+        class="middlee flex flex-col gap-[10px] p-0 lg:p-[20px] mb-[50px] lg:border-r lg:border-l border-gray-400"
+      >
+        <div class="kapa flex">
+          <div class="middleleft">
+            <h1 class="text-[30px] text-[#1f1f1f]">
+              LAW <span class="naka text-[#850606]">BLOG</span>
+            </h1>
+            <p class="font-sans text-[#0b0b0b] font-[300] pt-[10px] w-[200px]">
+              Learn more about virginia traffic law
+            </p>
+            <hr
+              class="border-none h-[1px] bg-black shadow-[0_3px_5px_rgba(0,0,0,0.4)] ml-0 w-full"
+            />
+            <div class="btn flex justify-end w-[240px] pr-[50px]">
+              <button class="btna text-white p-[5px_10px] bg-[#7d0606]">
+                Click here
+              </button>
+            </div>
+          </div>
+          <img src="pic1.gif" alt="" class="self-start" />
+        </div>
+        <div class="kapaz flex border-t border-black pt-[20px]">
+          <div class="middleleft">
+            <h1 class="text-[30px] text-[#1f1f1f]">
+              CASE <span class="naka text-[#850606]">RESULT</span>
+            </h1>
+            <p class="font-sans text-[#0b0b0b] font-[300] pt-[10px] w-[200px]">
+              See how we help our client.
+            </p>
+            <hr
+              class="border-none h-[1px] bg-black shadow-[0_3px_5px_rgba(0,0,0,0.4)] ml-0 w-full"
+            />
+            <div class="btn flex justify-end w-[240px] pr-[50px]">
+              <button class="btna text-white p-[5px_10px] bg-[#7d0606]">
+                Click here
+              </button>
+            </div>
+          </div>
+          <img src="order_icon.gif" alt="" />
+        </div>
+      </div>
+
+      <div class="rightw flex flex-col p-0 lg:pt-[20px]">
+        <div class="dopicture flex flex-row gap-[10px]">
+          <img src="avo_rating_large.gif" alt="" />
+          <img src="national_college_large.gif" alt="" />
+        </div>
+        <h1 class="text-[30px] text-[#1f1f1f] mt-4">
+          CERTIFICATES & <br /><span class="naka text-[#850606]"
+            >CREDENTIALS</span
+          >
+        </h1>
+        <p class="font-sans text-[#0b0b0b] font-[300] pt-[10px] w-[200px]">
+          See how we help our client.
+        </p>
+        <hr
+          class="border-none h-[1px] w-[250px] bg-black shadow-[0_3px_5px_rgba(0,0,0,0.4)] ml-0"
+        />
+        <div class="btn flex justify-end w-[240px] pr-[50px]">
+          <button class="btna text-white p-[5px_10px] bg-[#7d0606]">
+            Click here
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="alhridaba m-[20px] lg:m-[30px] flex flex-col lg:flex-row gap-[20px] lg:gap-[40px]"
+    >
+      <div class="akhrileft">
+        <h1 class="text-[30px] text-[#1f1f1f]">
+          PRACTICE <span class="naka text-[#850606]">AREAS</span>
+        </h1>
+        <div
+          class="service-box w-[300px] lg:w-[260px] h-[70px] bg-[#8e8e8e] flex items-center relative shadow-[0_6px_10px_rgba(0,0,0,0.3)] mt-[25px]"
+        >
+          <span class="left-line w-[6px] h-full bg-[#8b0000]"></span>
+          <div class="text pl-[15px]">
+            <h3 class="m-0 text-white text-[20px] font-bold">DUI & DWI</h3>
+            <p class="text-[12px] text-white flex gap-1 pl-[130px]">
+              LEARN MORE <span class="text-[#8b0000]">▶</span>
+            </p>
+          </div>
+        </div>
+        <div
+          class="service-box w-[300px] lg:w-[260px] h-[70px] bg-[#8e8e8e] flex items-center relative shadow-[0_6px_10px_rgba(0,0,0,0.3)] mt-[25px]"
+        >
+          <span class="left-line w-[6px] h-full bg-[#8b0000]"></span>
+          <div class="text pl-[15px]">
+            <h3 class="m-0 text-white text-[20px] font-bold">
+              RECKLESS DRIVING
+            </h3>
+            <p class="text-[12px] text-white flex gap-1 pl-[130px]">
+              LEARN MORE <span class="text-[#8b0000]">▶</span>
+            </p>
+          </div>
+        </div>
+        <div
+          class="service-box w-[300px] lg:w-[260px] h-[70px] bg-[#8e8e8e] flex items-center relative shadow-[0_6px_10px_rgba(0,0,0,0.3)] mt-[25px]"
+        >
+          <span class="left-line w-[6px] h-full bg-[#8b0000]"></span>
+          <div class="text pl-[15px]">
+            <h3 class="m-0 text-white text-[20px] font-bold">
+              SPEEDING TICKETS
+            </h3>
+            <p class="text-[12px] text-white flex gap-1 pl-[130px]">
+              LEARN MORE <span class="text-[#8b0000]">▶</span>
+            </p>
+          </div>
+        </div>
+        <div
+          class="service-box w-[300px] lg:w-[260px] h-[70px] bg-[#8e8e8e] flex items-center relative shadow-[0_6px_10px_rgba(0,0,0,0.3)] mt-[25px]"
+        >
+          <span class="left-line w-[6px] h-full bg-[#8b0000]"></span>
+          <div class="text pl-[15px]">
+            <h3 class="m-0 text-white text-[20px] font-bold">
+              TRAFFICE VIOLATION
+            </h3>
+            <p class="text-[12px] text-white flex gap-1 pl-[130px]">
+              LEARN MORE <span class="text-[#8b0000]">▶</span>
+            </p>
+          </div>
+        </div>
+        <h1 class="text-[20px] text-[#1f1f1f] mt-[25px]">
+          LEARN <span class="naka text-[#850606]">MORE</span> ABOUT
+        </h1>
+      </div>
+
+      <div class="akhrimiddle flex-1">
+        <h1 class="text-[30px] text-[#1f1f1f]">&lt; H1 &gt; PAGE TITLE HERE</h1>
+        <p class="font-sans text-[#0b0b0b] font-[300] pt-[10px] leading-[25px]">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum,
+          dolores? Odio, officiis repellat provident minus sint quibusdam facere
+          a vel eveniet libero eum ea autem nemo reiciendis. Lorem, ipsum dolor
+          sit amet consectetur adipisicing elit. Expedita quam necessitatibus,
+          consectetur beatae dicta explicabo, nobis eum iste reiciendis rerum
+          eos? Veniam enim incidunt aperiam doloribus nam ut aliquam officia!
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim autem
+          quas itaque ratione, mollitia quaerat a. Doloremque corporis eaque,
+          blanditiis architecto beatae qui consectetur ratione exercitationem
+          mollitia reiciendis dicta aperiam! Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Quibusdam facere, impedit quaerat libero
+          enim quis? Vel odio nam ex impedit alias voluptas, obcaecati, aperiam
+          aliquid tempora debitis, labore exercitationem nostrum!
+        </p>
+      </div>
+
+      <div class="akhriright flex flex-col">
+        <h1 class="text-[30px] text-[#1f1f1f]">
+          CLIENT <br /><span class="naka text-[#850606]">TESTIMONIALS</span>
+        </h1>
+        <p class="font-sans text-[#0b0b0b] font-[300] w-[200px]">
+          Read what others say about keefer law firm.
+        </p>
+        <hr
+          class="border-none h-[1px] bg-black w-[200px] shadow-[0_3px_5px_rgba(0,0,0,0.4)] ml-0"
+        />
+        <div class="btnya flex justify-center w-[240px]">
+          <button class="btna text-white p-[5px_10px] bg-[#7d0606]">
+            Click here
+          </button>
+        </div>
+        <h1 class="text-[30px] text-[#1f1f1f]">
+          DOWNLOAD<br /><span class="naka text-[#850606]">FREE</span> REPORTS
+        </h1>
+        <p class="font-sans text-[#0b0b0b] font-[300] w-[200px]">
+          Read what others say about keefer law firm.
+        </p>
+        <hr
+          class="border-none h-[1px] bg-black w-[200px] shadow-[0_3px_5px_rgba(0,0,0,0.4)] ml-0"
+        />
+        <div class="btnya flex justify-center w-[240px]">
+          <button class="btna text-white p-[5px_10px] bg-[#7d0606]">
+            Click here
+          </button>
+        </div>
+        <h1 class="text-[30px] text-[#1f1f1f]">
+          CONTACT<span class="naka text-[#850606]">OUR</span><br />OFFICES
+        </h1>
+        <p class="font-sans text-[#0b0b0b] font-[300] w-[200px]">
+          Read what others say about keefer law firm.
+        </p>
+        <hr
+          class="border-none h-[1px] bg-black w-[200px] shadow-[0_3px_5px_rgba(0,0,0,0.4)] ml-0"
+        />
+        <div class="btnya flex justify-center w-[240px]">
+          <button class="btna text-white p-[5px_10px] bg-[#7d0606]">
+            Click here
+          </button>
+        </div>
+        <div class="flex flex-col gap-10 pt-10">
+          <img src="qqq.gif" alt="" class="w-[200px] pl-[25px]" />
+          <img
+            src="national_college_small.gif"
+            alt=""
+            class="w-[180px] pl-[25px]"
+          />
+        </div>
+        <h1 class="font-sans text-[#0b0b0b] p-[20px]">
+          FOLLOW <span class="naka text-[#850606]">US</span>
+        </h1>
+        <div class="socialicon flex gap-[20px]">
+          <img src="fb_icon.gif" alt="" /><img
+            src="google_icon.gif"
+            alt=""
+          /><img src="twitter_icon.gif" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function toggleMenu() {
+        document.getElementById("menu").classList.toggle("show");
+      }
+    </script>
+  </body>
+</html>

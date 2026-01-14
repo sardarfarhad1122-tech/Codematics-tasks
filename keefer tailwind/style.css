@@ -1,0 +1,583 @@
+/*
+
+
+
+
+* {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  overflow: hidden;
+}
+#logo {
+  width: 700px;
+}
+.numberwalasection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 40px;
+}
+#aka {
+  font-size: 30px;
+  color: rgb(123, 4, 4);
+  text-decoration: underline;
+  text-decoration-color: rgb(138, 126, 126);
+  text-underline-offset: 6px;
+  text-decoration-thickness: 2px;
+}
+#hhsj {
+  font-size: 25px;
+}
+#nikka {
+  padding-top: 5px;
+  font-size: 45px;
+}
+.endi {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background-color: rgb(128, 6, 6);
+  height: 50px;
+  padding-right: 40px;
+  overflow: hidden;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  text-decoration: none;
+  list-style: none;
+}
+.menu li a {
+  color: white;
+  font-size: 22px;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+.menu li a:hover {
+  background-color: grey;
+}
+.right {
+  margin-top: 20px;
+  margin-left: 40px;
+  width: 50%;
+}
+.toggle {
+  display: none;
+}
+.firstwalipic {
+  width: 100%;
+  height: 100%;
+}
+.left {
+  margin-top: 20px;
+  margin-right: 40px;
+  background-image: url(form_bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50%;
+}
+.firstsection {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  overflow: hidden;
+}
+#que {
+  background-color: rgb(125, 6, 6);
+  padding: 10px;
+  color: white;
+  font-family: serif;
+  width: 200px;
+  height: 40px;
+}
+.questio {
+  display: flex;
+}
+.paak {
+  padding-left: 60px;
+  padding-top: 20px;
+  font-size: 30px;
+  font-weight: 400;
+}
+#big {
+  color: rgb(24, 24, 94);
+}
+#ptane {
+  padding: 20px 60px 20px 60px;
+  color: rgb(31, 31, 31);
+  font-family: serif;
+}
+.formq {
+  display: flex;
+  padding-left: 60px;
+  gap: 20px;
+}
+#name {
+  width: 300px;
+  height: 30px;
+  margin-left: 9px;
+}
+.confidential {
+  padding-top: 20px;
+}
+
+.ahas {
+  transform: rotate(15deg);
+  width: 200px;
+}
+.leftmiddle {
+  display: flex;
+  gap: 15px;
+}
+.leftd {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  padding-top: 20px;
+}
+.rightw {
+}
+#kldk {
+  font-size: 30px;
+  color: rgb(31, 31, 31);
+}
+.naka {
+  color: rgb(133, 6, 6);
+}
+#kachra {
+  font-size: 20px;
+  color: rgb(133, 6, 6);
+}
+#zaza {
+  font-family: sans-serif;
+  color: rgb(11, 11, 11);
+  font-weight: 300px;
+  padding-top: 10px;
+  width: 200px;
+}
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  width: 240px;
+  padding-right: 50px;
+}
+.btnp {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  width: 240px;
+  padding-right: 50px;
+}
+.btnah {
+  color: white;
+  font-size: 16px;
+  font-family: sans-serif;
+  padding: 5px 10px 5px 10px;
+  background-color: rgb(125, 6, 6);
+  border: 1px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.btnyahs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 240px;
+  padding-right: 50px;
+}
+.btna {
+  color: white;
+  font-size: 16px;
+  font-family: sans-serif;
+  padding: 5px 10px 5px 10px;
+  background-color: rgb(125, 6, 6);
+  border: 1px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.centerwaladaba {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+  padding-top: 40px;
+  margin-bottom: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.middlee {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px 20px;
+  margin-bottom: 50px;
+  border-right: 1px solid gray;
+  border-left: 1px solid gray;
+}
+.kapa {
+  display: flex;
+}
+.kapaz {
+  display: flex;
+  border-top: 1px solid black;
+  padding-top: 20px;
+}
+.kapaas {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+.dopicture {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.service-box {
+  width: 260px;
+  height: 70px;
+  background-color: #8e8e8e;
+  display: flex;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+  font-family: Arial, sans-serif;
+  margin-top: 25px;
+}
+.left-line {
+  width: 6px;
+  height: 100%;
+  background-color: darkred;
+}
+
+.text {
+  padding-left: 15px;
+}
+
+.text h3 {
+  margin: 0;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.text p {
+  margin: 4px 0 0;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  align-self: end;
+  padding-left: 130px;
+  gap: 6px;
+}
+.arrow {
+  color: darkred;
+}
+.alhridaba {
+  margin: 30px;
+  display: flex;
+  flex-direction: ROW;
+  gap: 40px;
+}
+#zazaee {
+  font-family: sans-serif;
+  color: rgb(11, 11, 11);
+  font-weight: 300px;
+  padding-top: 10px;
+  line-height: 25px;
+}
+.btnya {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 240px;
+}
+.akhriright {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#kldki {
+  font-size: 20px;
+  color: rgb(31, 31, 31);
+  margin-top: 25px;
+}
+#kldkzz {
+  font-family: sans-serif;
+  color: rgb(11, 11, 11);
+  align-self: center;
+}
+.socialicon {
+  display: flex;
+  gap: 20px;
+  align-self: center;
+}
+hr {
+  border: none;
+  height: 1px;
+  background-color: #000;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+  margin-left: 60px;
+}
+#textarea {
+  margin-left: 70px;
+  padding-left: 20px;
+  width: 80%;
+  height: 60px;
+  margin-top: 20px;
+}
+.ramzi {
+  height: 1px;
+  background-color: #000;
+}
+.nechlywala {
+  display: flex;
+  margin-left: 60px;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#badadbtn {
+  font-family: sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 100;
+  padding-top: 10px;
+  color: rgb(69, 69, 69);
+}
+.btnam {
+  color: white;
+  font-size: 18px;
+  font-family: sans-serif;
+  padding: 15px;
+  background-color: rgb(125, 6, 6);
+  border: 1px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+#colege {
+  width: 200px;
+  padding-left: 25px;
+}
+@media (max-width: 1024px) {
+  #logo {
+    width: 450px;
+  }
+
+  .menu li a {
+    font-size: 18px;
+  }
+
+  .firstsection {
+    flex-direction: column;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+    margin: 0;
+  }
+
+  .paak {
+    padding-left: 30px;
+    font-size: 24px;
+  }
+
+  .formq {
+    padding-left: 30px;
+    flex-direction: column;
+  }
+
+  #name {
+    width: 90%;
+  }
+
+  #textarea {
+    width: 90%;
+    margin-left: 30px;
+  }
+
+  .centerwaladaba {
+    flex-direction: column;
+  }
+
+  .middlee {
+    border: none;
+    padding: 0;
+  }
+
+  .alhridaba {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nechlywala {
+    margin-left: 30px;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #logo {
+    width: 200px;
+  }
+
+  .numberwalasection {
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+  }
+  #aka {
+    font-size: 16px;
+  }
+  #nikka {
+    font-size: 16px;
+  }
+  #hhsj {
+    font-size: 12px;
+  }
+
+  .endi {
+    justify-content: center;
+    padding-right: 0;
+    height: auto;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .menu li a {
+    font-size: 16px;
+  }
+
+  .firstsection {
+    flex-direction: column;
+  }
+  .firstwalipic {
+    padding-top: 20px;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+    margin: 0;
+  }
+  .ahas {
+    padding-bottom: 40px;
+    padding-left: 90px;
+  }
+
+  .paak {
+    padding-left: 20px;
+    font-size: 22px;
+  }
+
+  #ptane {
+    padding: 15px 20px;
+  }
+
+  .formq {
+    padding-left: 20px;
+    flex-direction: column;
+  }
+
+  #name {
+    width: 95%;
+  }
+
+  #textarea {
+    width: 90%;
+    margin-left: 20px;
+  }
+  .ht {
+    display: none;
+  }
+
+  .btn {
+    width: 200px;
+    padding: ;
+  }
+
+  .centerwaladaba {
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+  .leftmiddle {
+    display: flex;
+    gap: 70px;
+  }
+
+  #paste_board {
+    width: 90px;
+  }
+
+  .service-box {
+    width: 100%;
+  }
+
+  .alhridaba {
+    flex-direction: column;
+    margin: 20px;
+  }
+  .kapaas {
+    padding: 0px;
+    margin: 0;
+  }
+
+  hr {
+    margin-left: 20px;
+    width: 80%;
+  }
+
+  .nechlywala {
+    margin-left: 20px;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .toggle {
+    display: block;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    justify-content: end;
+    align-content: end;
+    padding-left: 400px;
+  }
+  .menu {
+    display: none;
+    flex-direction: column;
+    background: #444;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .menu.show {
+    display: flex;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  .btnam {
+    width: 800px;
+  }
+}
