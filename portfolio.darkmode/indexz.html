@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body class="body font-sans" id="body">
+    <header class="theme-section bg-gray-300 p-5 relative">
+      <div class="flex items-center justify-between dark:bg-gray-800">
+        <p class="text-xl font-bold cursor-pointer" id="par">&lt; SSC /&gt;</p>
+        <button id="para"><span id="text1">ahohoasiv</span></button>
+
+        <div class="sm:hidden relative">
+          <input type="checkbox" id="menu-toggle" class="peer hidden" />
+          <label for="menu-toggle" class="cursor-pointer p-2 border rounded">
+            <i class="fa fa-bars"></i>
+          </label>
+
+          <ul
+            class="flex flex-col gap-3 absolute top-full left-0 w-screen bg-gray-300 p-5 hidden peer-checked:flex z-10"
+          >
+            <a
+              href="#"
+              class="text-[#7A7676] hover:text-black w-full block dark:text-white dark:hover:text-white"
+              >About</a
+            >
+            <a
+              href="#"
+              class="text-[#7A7676] hover:text-black w-full block dark:text-white dark:hover:text-white"
+              >Work</a
+            >
+            <a
+              href="#"
+              class="text-[#7A7676] hover:text-black w-full block dark:text-white dark:hover:text-white"
+              >Testimonials</a
+            >
+            <a
+              href="#"
+              class="text-[#7A7676] hover:text-black w-full block dark:text-white dark:hover:text-white"
+              >Contact</a
+            >
+            <img src="light.png" alt="Theme" class="h-6 w-6" />
+            <button class="bg-black text-white px-3 py-1 rounded w-full">
+              Download Cv
+            </button>
+          </ul>
+        </div>
+
+        <ul class="hidden sm:flex sm:items-center sm:gap-5">
+          <a href="#" class="text-[#7A7676] hover:text-black dark:text-white"
+            >About</a
+          >
+          <a href="#" class="text-[#7A7676] hover:text-black dark:text-white"
+            >Work</a
+          >
+          <a href="#" class="text-[#7A7676] hover:text-black dark:text-white"
+            >Testimonials</a
+          >
+          <a href="#" class="text-[#7A7676] hover:text-black dark:text-white"
+            >Contact</a
+          >
+          <img src="light.png" alt="Theme" class="h-6 w-6" id="darkmode" />
+          <button class="bg-black text-white px-3 py-1 rounded">
+            Download Cv
+          </button>
+        </ul>
+      </div>
+    </header>
+
+    <section
+      class="theme-section flex flex-col lg:flex-row items-center justify-between p-5 sm:p-10 gap-10"
+    >
+      <div class="flex-1 flex flex-col gap-5" id="header">
+        <h1 class="text-2xl sm:text-3xl font-bold">Hi, I'm Ahsan 👋</h1>
+        <p class="text-gray-700">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat
+          ullam modi voluptas illo numquam totam? Culpa, cum voluptatibus!
+          Molestias ipsam pariatur, quos quaerat inventore tenetur maiores
+          porro. Ipsum, exercitationem consequatur?
+        </p>
+        <div class="flex items-center gap-2 text-gray-600">
+          <i class="fa-solid fa-location-arrow"></i>
+          <span>Islamabad, Pakistan</span>
+        </div>
+        <ul class="list-disc pl-5 text-gray-600">
+          <li>Available for new projects</li>
+        </ul>
+        <div class="flex gap-4 text-gray-600">
+          <i class="fa-brands fa-x-twitter"></i>
+          <i class="fa-brands fa-pinterest-p"></i>
+          <i class="fa-brands fa-facebook-f"></i>
+        </div>
+      </div>
+      <div class="flex-1 flex justify-center lg:justify-end">
+        <img src="profile.png" alt="Profile" class="w-64 sm:w-80 md:w-96" />
+      </div>
+    </section>
+
+    <section
+      class="theme-section bg-gray-300 flex flex-col gap-10 px-5 sm:px-10 py-auto"
+    >
+      <div class="theme-section">
+        <button class="bg-gray-500 text-white px-4 py-2 rounded block mx-auto">
+          About Me
+        </button>
+      </div>
+      <div class="theme-section flex flex-col lg:flex-row gap-10">
+        <div class="flex-1">
+          <img
+            src="Pic Container.png"
+            alt="About"
+            class="mx-auto object-cover"
+          />
+        </div>
+        <div class="flex-1 flex flex-col gap-5">
+          <h2 class="font-bold text-xl sm:text-2xl">
+            Curious About me? Here you have it
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+            doloribus illo molestias iste, atque perspiciatis rem blanditiis,
+            dolor ea ullam, culpa quisquam ad nihil ab dolores aut laboriosam
+            laborum. Neque!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+            temporibus dolore voluptatibus ut culpa modi, blanditiis ea corrupti
+            aliquam. Possimus nemo corporis, voluptates quis enim assumenda
+            expedita voluptatibus ipsum ullam!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. In magni
+            accusantium soluta, nostrum nemo molestiae fugit? Magni ullam fuga
+            quidem ipsam, nemo dicta
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Repudiandae a tempora tempore similique, impedit illo beatae cumque
+            architecto quas non voluptatum laborum, fuga alias obcaecati magnam,
+            illum reiciendis doloremque? Incidunt?
+          </p>
+          <div class="grid grid-cols-2 gap-4">
+            <p>B.E. Computer</p>
+            <p>B.E. Computer</p>
+            <p>B.E. Computer</p>
+            <p>B.E. Computer</p>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta
+            soluta quibusdam commodi obcaecati cumque,
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="theme-section flex flex-col gap-10 px-5 sm:px-10 py-10">
+      <div class="flex flex-col gap-5 text-center">
+        <button class="bg-gray-500 text-white px-4 py-2 rounded mx-auto">
+          Skills
+        </button>
+        <p class="mx-auto max-w-xl">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi alias
+          nihil, odit nobis, eaque dist
+        </p>
+      </div>
+
+      <div
+        class="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-4"
+      >
+        <img src="icon-cypress.svg" alt="" />
+        <img src="icon-express.svg" alt="" />
+        <img src="icon-git.svg" alt="" />
+        <img src="icon-figma.svg" alt="" />
+        <img src="icon-javscript.svg" alt="" />
+        <img src="icon-mongodb.svg" alt="" />
+        <img src="icon-nodejs.svg" alt="" />
+        <img src="icon-postgresql.svg" alt="" />
+        <img src="icon-react.svg" alt="" />
+        <img src="icon-sass.svg" alt="" />
+        <img src="icon-socket.svg" alt="" />
+        <img src="icon-storybook.svg" alt="" />
+        <img src="icon-tailwindcss.svg" alt="" />
+        <img src="icon-typescript.svg" alt="" />
+        <img src="icon-storybook.svg" alt="" />
+        <img src="icon-nest.svg" alt="" />
+      </div>
+    </section>
+
+    <section
+      class="theme-section flex flex-col gap-10 px-5 sm:px-10 py-10 bg-gray-300"
+    >
+      <div class="theme-section flex flex-col gap-5 text-center">
+        <button class="bg-gray-500 text-white px-4 py-2 rounded mx-auto">
+          Experience
+        </button>
+        <p class="mx-auto max-w-xl">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi alias
+          nihil, odit nobis, eaque dist
+        </p>
+      </div>
+
+      <div class="theme-section flex flex-col gap-5 lg:gap-10">
+        <div
+          class="bg-white p-5 shadow-lg rounded mx-auto w-full lg:w-3/5 flex flex-col lg:flex-row gap-5"
+        >
+          <div class="flex-1 flex justify-start lg:justify-start">
+            <img
+              src="logo-upwork.png"
+              alt="Upwork"
+              class="w-24 h-12 object-contain"
+            />
+          </div>
+          <div class="theme-section flex-1 flex flex-col gap-3">
+            <h3 class="font-bold text-lg">Sr. Frontend Developer</h3>
+            <ul class="list-disc pl-5 text-gray-700">
+              <li>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Voluptas ctus ipsum doloremque
+              </li>
+              <li>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Voluptas quis delectus ipsum doloremque
+              </li>
+              <li>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Voluptas quis delectus ipsum doloremque
+              </li>
+              <li>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Voluptas quis delectus ipsum doloremque
+              </li>
+            </ul>
+          </div>
+          <div
+            class="theme-section flex justify-start items-start lg:items-center flex-1"
+          >
+            <p>January 2026</p>
+          </div>
+        </div>
+
+        <div
+          class="theme-section bg-white p-5 shadow-lg rounded mx-auto w-full lg:w-3/5 flex flex-col lg:flex-row gap-5"
+        >
+          <div class="theme-section flex-1 flex justify-start lg:justify-start">
+            <img
+              src="logo-upwork.png"
+              alt="Upwork"
+              class="w-24 h-12 object-contain"
+            />
+          </div>
+          <div class="theme-section flex-1 flex flex-col gap-3">
+            <h3 class="font-bold text-lg">Team Lead</h3>
+            <ul class="list-disc pl-5 text-gray-700">
+              <li>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Voluptas ctus ipsum doloremque
+              </li>
+              <li>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Voluptas quis delectus ipsum doloremque
+              </li>
+              <li>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Voluptas quis delectus ipsum doloremque
+              </li>
+              <li>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Voluptas quis delectus ipsum doloremque
+              </li>
+            </ul>
+          </div>
+          <div class="flex justify-start items-start lg:items-center flex-1">
+            <p>January 2026</p>
+          </div>
+        </div>
+
+        <div
+          class="theme-section bg-white p-5 shadow-lg rounded mx-auto w-full lg:w-3/5 flex flex-col lg:flex-row gap-5"
+        >
+          <div class="theme-section flex-1 flex justify-start lg:justify-start">
+            <img
+              src="logo-upwork.png"
+              alt="Upwork"
+              class="w-24 h-12 object-contain"
+            />
+          </div>
+          <div class="theme-section flex-1 flex flex-col gap-3">
+            <h3 class="font-bold text-lg">Full Stack Developer</h3>
+            <ul class="list-disc pl-5 text-gray-700">
+              <li>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Voluptas ctus ipsum doloremque
+              </li>
+            </ul>
+          </div>
+          <div
+            class="theme-section flex justify-start items-start lg:items-center flex-1"
+          >
+            <p>January 2026</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="theme-section flex flex-col gap-10 px-5 sm:px-10 py-10">
+      <div class="flex flex-col gap-5 text-center">
+        <button class="bg-gray-500 text-white px-4 py-2 rounded mx-auto">
+          Work
+        </button>
+        <p class="mx-auto max-w-xl">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi alias
+          nihil, odit nobis, eaque dist
+        </p>
+      </div>
+
+      <div class="flex flex-col gap-10">
+        <div class="flex flex-col lg:flex-row gap-5">
+          <div class="flex-1">
+            <img
+              src="Picture.png"
+              alt="Work"
+              class="w-full h-auto object-cover"
+            />
+          </div>
+          <div class="flex-1 flex flex-col gap-5">
+            <h3 class="font-bold text-xl">Fiski</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+              doloribus illo molestias iste, atque perspiciatis rem blanditiis,
+              dolor ea ullam, culpa quisquam ad nihil ab dolores aut laboriosam
+              laborum. Neque!
+            </p>
+            <div
+              class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 w-full"
+            >
+              <button class="bg-gray-400 text-black px-4 py-1 rounded-full">
+                React
+              </button>
+              <button class="bg-gray-400 text-black px-4 py-1 rounded-full">
+                Next Js
+              </button>
+              <button class="bg-gray-400 text-black px-4 py-1 rounded-full">
+                Typescript
+              </button>
+              <button class="bg-gray-400 text-black px-4 py-1 rounded-full">
+                Next.js
+              </button>
+              <button class="bg-gray-400 text-black px-4 py-1 rounded-full">
+                PostgreSQL
+              </button>
+              <button class="bg-gray-400 text-black px-4 py-1 rounded-full">
+                TailwindCSS
+              </button>
+              <button class="bg-gray-400 text-black px-4 py-1 rounded-full">
+                Figma
+              </button>
+              <button class="bg-gray-400 text-black px-4 py-1 rounded-full">
+                Cypress
+              </button>
+              <button class="bg-gray-400 text-black px-4 py-1 rounded-full">
+                Storybook
+              </button>
+              <button class="bg-gray-400 text-black px-4 py-1 rounded-full">
+                Git
+              </button>
+            </div>
+            <img src="Icon Button.png" alt="Icon" class="w-10 mt-3" />
+          </div>
+        </div>
+        <div class="flex flex-col gap-10">
+          <div class="flex flex-col lg:flex-row gap-5">
+            <div class="flex-1">
+              <img
+                src="Picture.png"
+                alt="Work"
+                class="w-full h-auto object-cover"
+              />
+            </div>
+            <div class="flex-1 flex flex-col gap-5">
+              <h3 class="font-bold text-xl">Fiski</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+                doloribus illo molestias iste, atque perspiciatis rem
+                blanditiis, dolor ea ullam, culpa quisquam ad nihil ab dolores
+                aut laboriosam laborum. Neque!
+              </p>
+              <div
+                class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 w-full"
+              >
+                <button class="bg-gray-400 text-black px-4 py-1 rounded-full">
+                  React
+                </button>
+                <button class="bg-gray-400 text-black px-4 py-1 rounded-full">
+                  Next Js
+                </button>
+                <button class="bg-gray-400 text-black px-4 py-1 rounded-full">
+                  Typescript
+                </button>
+                <button class="bg-gray-400 text-black px-4 py-1 rounded-full">
+                  Next.js
+                </button>
+                <button class="bg-gray-400 text-black px-4 py-1 rounded-full">
+                  PostgreSQL
+                </button>
+                <button class="bg-gray-400 text-black px-4 py-1 rounded-full">
+                  TailwindCSS
+                </button>
+                <button class="bg-gray-400 text-black px-4 py-1 rounded-full">
+                  Figma
+                </button>
+                <button class="bg-gray-400 text-black px-4 py-1 rounded-full">
+                  Cypress
+                </button>
+                <button class="bg-gray-400 text-black px-4 py-1 rounded-full">
+                  Storybook
+                </button>
+                <button class="bg-gray-400 text-black px-4 py-1 rounded-full">
+                  Git
+                </button>
+              </div>
+              <img src="Icon Button.png" alt="Icon" class="w-10 mt-3" />
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-10">
+          <div class="flex flex-col lg:flex-row gap-5">
+            <div class="flex-1">
+              <img
+                src="Picture.png"
+                alt="Work"
+                class="w-full h-auto object-cover"
+              />
+            </div>
+            <div class="theme-section flex-1 flex flex-col gap-5">
+              <h3 class="font-bold text-xl">Fiski</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+                doloribus illo molestias iste, atque perspiciatis rem
+                blanditiis, dolor ea ullam, culpa quisquam ad nihil ab dolores
+                aut laboriosam laborum. Neque!
+              </p>
+              <div
+                class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 w-full"
+              >
+                <button class="bg-gray-400 text-black px-4 py-1 rounded-full">
+                  React
+                </button>
+                <button class="bg-gray-400 text-black px-4 py-1 rounded-full">
+                  Next Js
+                </button>
+                <button class="bg-gray-400 text-black px-4 py-1 rounded-full">
+                  Typescript
+                </button>
+                <button class="bg-gray-400 text-black px-4 py-1 rounded-full">
+                  Next.js
+                </button>
+                <button class="bg-gray-400 text-black px-4 py-1 rounded-full">
+                  PostgreSQL
+                </button>
+                <button class="bg-gray-400 text-black px-4 py-1 rounded-full">
+                  TailwindCSS
+                </button>
+                <button class="bg-gray-400 text-black px-4 py-1 rounded-full">
+                  Figma
+                </button>
+                <button class="bg-gray-400 text-black px-4 py-1 rounded-full">
+                  Cypress
+                </button>
+                <button class="bg-gray-400 text-black px-4 py-1 rounded-full">
+                  Storybook
+                </button>
+                <button class="bg-gray-400 text-black px-4 py-1 rounded-full">
+                  Git
+                </button>
+              </div>
+              <img src="Icon Button.png" alt="Icon" class="w-10 mt-3" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="theme-section flex flex-col gap-10 px-5 sm:px-10 py-10 bg-gray-100"
+    >
+      <div class="theme-section flex flex-col gap-5 text-center">
+        <button class="bg-gray-500 text-white px-4 py-2 rounded-full mx-auto">
+          Testimonials
+        </button>
+        <p>Nice things people said to me</p>
+      </div>
+      <div
+        class="theme-section grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
+      >
+        <div
+          class="theme-section bg-white shadow-2xl p-5 flex flex-col gap-3 text-center rounded"
+        >
+          <img
+            src="icon-user.png"
+            alt="User"
+            class="mx-auto w-16 h-16 object-cover"
+          />
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi
+            consequuntur, esse culpa molestiae, ipsa earum eos rem quibusdam sit
+            dolorum asperiores, temporibus iure vel. Incidunt praesentium
+            tenetur corrupti placeat magnam.
+          </p>
+          <p class="font-bold text-lg">John Doe</p>
+          <p>Founder xyz</p>
+        </div>
+        <div
+          class="theme-sectionbg-white shadow-2xl p-5 flex flex-col gap-3 text-center rounded"
+        >
+          <img
+            src="icon-user.png"
+            alt="User"
+            class="mx-auto w-16 h-16 object-cover"
+          />
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi
+            consequuntur, esse culpa molestiae, ipsa earum eos rem quibusdam sit
+            dolorum asperiores, temporibus iure vel. Incidunt praesentium
+            tenetur corrupti placeat magnam.
+          </p>
+          <p class="font-bold text-lg">John Doe</p>
+          <p>Founder xyz</p>
+        </div>
+        <div
+          class="theme-section theme-sectionbg-white shadow-2xl p-5 flex flex-col gap-3 text-center rounded"
+        >
+          <img
+            src="icon-user.png"
+            alt="User"
+            class="mx-auto w-16 h-16 object-cover"
+          />
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi
+            consequuntur, esse culpa molestiae, ipsa earum eos rem quibusdam sit
+            dolorum asperiores, temporibus iure vel. Incidunt praesentium
+            tenetur corrupti placeat magnam.
+          </p>
+          <p class="font-bold text-lg">John Doe</p>
+          <p>Founder xyz</p>
+        </div>
+      </div>
+    </section>
+    <section
+      class="theme-section flex flex-col gap-10 px-5 sm:px-10 py-10 bg-gray-100"
+    >
+      <div class="theme-section flex flex-col gap-5 text-center">
+        <button class="bg-gray-500 text-white px-4 py-2 rounded-full mx-auto">
+          Contact
+        </button>
+        <p class="mx-auto max-w-xl">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, eius
+          eum mollitia repudiand
+        </p>
+        <p class="mx-auto max-w-xl">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi,
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <div class="flex items-center gap-2">
+            <img
+              src="email.png"
+              alt="Email"
+              class="w-6 h-6"
+            />Farhadali@gmail.com
+            <img src="box.png" alt="Box" class="w-6 h-6" />
+          </div>
+          <div class="flex items-center gap-2">
+            <img src="mob.png" alt="Phone" class="w-6 h-6" />03135215047
+            <img src="box.png" alt="Box" class="w-6 h-6" />
+          </div>
+        </div>
+        <p class="mx-auto max-w-xl">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi,
+        </p>
+        <div class="flex justify-center gap-4">
+          <img src="Icon2.png" alt="Social1" class="w-6 h-6" />
+          <img src="Icon3.png" alt="Social2" class="w-6 h-6" />
+          <img src="Icon4.png" alt="Social3" class="w-6 h-6" />
+        </div>
+      </div>
+    </section>
+  </body>
+  <script>
+    const themeBtn = document.getElementById("para");
+    const themeText = document.getElementById("text1");
+    const htmlElement = document.documentElement; // Target the <html> tag
+
+    themeBtn.addEventListener("click", function () {
+      // IF/ELSE LOGIC
+      if (htmlElement.classList.contains("dark")) {
+        // If it's dark, make it light
+        htmlElement.classList.remove("dark");
+        themeText.innerText = "🌙"; // Show moon icon
+      } else {
+        // If it's light, make it dark
+        htmlElement.classList.add("dark");
+        themeText.innerText = "☀️"; // Show sun icon
+      }
+    });
+  </script>
+</html>

@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+      };
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body
+    class="font-sans bg-white text-black dark:bg-black dark:text-white transition-colors duration-300"
+    id="body"
+  >
+    <header class="bg-gray-300 dark:bg-black p-5 relative transition-colors">
+      <div class="flex items-center justify-between">
+        <p class="text-xl font-bold cursor-pointer" id="par">&lt; SSC /&gt;</p>
+
+        <div class="sm:hidden relative">
+          <input type="checkbox" id="menu-toggle" class="peer hidden" />
+          <label
+            for="menu-toggle"
+            class="cursor-pointer p-2 border rounded dark:border-gray-600"
+          >
+            <i class="fa fa-bars"></i>
+          </label>
+
+          <ul
+            class="flex flex-col gap-3 absolute top-full right-0 w-48 bg-gray-300 dark:bg-zinc-900 p-5 hidden peer-checked:flex z-10 shadow-xl"
+          >
+            <a
+              href="#"
+              class="text-[#7A7676] hover:text-black dark:text-gray-300 dark:hover:text-white"
+              >About</a
+            >
+            <a
+              href="#"
+              class="text-[#7A7676] hover:text-black dark:text-gray-300 dark:hover:text-white"
+              >Work</a
+            >
+            <a
+              href="#"
+              class="text-[#7A7676] hover:text-black dark:text-gray-300 dark:hover:text-white"
+              >Testimonials</a
+            >
+            <a
+              href="#"
+              class="text-[#7A7676] hover:text-black dark:text-gray-300 dark:hover:text-white"
+              >Contact</a
+            >
+
+            <button
+              class="bg-black text-white dark:bg-white dark:text-black px-3 py-1 rounded w-full"
+            >
+              Download Cv
+            </button>
+          </ul>
+        </div>
+
+        <ul class="hidden sm:flex sm:items-center sm:gap-5">
+          <a
+            href="#"
+            class="text-[#7A7676] hover:text-black dark:text-gray-300 dark:hover:text-white"
+            >About</a
+          >
+          <a
+            href="#"
+            class="text-[#7A7676] hover:text-black dark:text-gray-300 dark:hover:text-white"
+            >Work</a
+          >
+          <a
+            href="#"
+            class="text-[#7A7676] hover:text-black dark:text-gray-300 dark:hover:text-white"
+            >Testimonials</a
+          >
+          <a
+            href="#"
+            class="text-[#7A7676] hover:text-black dark:text-gray-300 dark:hover:text-white"
+            >Contact</a
+          >
+          <button
+            id="para"
+            class="p-2 border rounded border-gray-400 dark:border-gray-600"
+          >
+            <span id="text1">🌙</span>
+          </button>
+          <button
+            class="bg-black text-white dark:bg-white dark:text-black px-3 py-1 rounded"
+          >
+            Download Cv
+          </button>
+        </ul>
+      </div>
+    </header>
+
+    <section
+      class="flex flex-col lg:flex-row items-center justify-between p-5 sm:p-10 gap-10 dark:bg-black"
+    >
+      <div class="flex-1 flex flex-col gap-5">
+        <h1 class="text-2xl sm:text-3xl font-bold">Hi, I'm Ahsan 👋</h1>
+        <p class="text-gray-700 dark:text-gray-400">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat
+          ullam modi voluptas illo numquam totam? Culpa, cum voluptatibus!
+          Molestias ipsam pariatur, quos quaerat inventore tenetur maiores
+          porro. Ipsum, exercitationem consequatur?
+        </p>
+        <div class="flex items-center gap-2 text-gray-600 dark:text-gray-400">
+          <i class="fa-solid fa-location-arrow"></i>
+          <span>Islamabad, Pakistan</span>
+        </div>
+        <ul class="list-disc pl-5 text-gray-600 dark:text-gray-400">
+          <li>Available for new projects</li>
+        </ul>
+        <div class="flex gap-4 text-gray-600 dark:text-gray-400 text-xl">
+          <i class="fa-brands fa-x-twitter"></i>
+          <i class="fa-brands fa-pinterest-p"></i>
+          <i class="fa-brands fa-facebook-f"></i>
+        </div>
+      </div>
+      <div class="flex-1 flex justify-center lg:justify-end">
+        <img src="profile.png" alt="Profile" class="w-64 sm:w-80 md:w-96" />
+      </div>
+    </section>
+
+    <section
+      class="bg-gray-300 dark:bg-black flex flex-col gap-10 px-5 sm:px-10 py-16 transition-colors"
+    >
+      <div>
+        <button class="bg-gray-500 text-white px-4 py-2 rounded block mx-auto">
+          About Me
+        </button>
+      </div>
+      <div class="flex flex-col lg:flex-row gap-10">
+        <div class="flex-1">
+          <img
+            src="Pic Container.png"
+            alt="About"
+            class="mx-auto object-cover"
+          />
+        </div>
+        <div class="flex-1 flex flex-col gap-5">
+          <h2 class="font-bold text-xl sm:text-2xl">
+            Curious About me? Here you have it
+          </h2>
+          <p class="text-gray-700 dark:text-gray-400">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+            doloribus illo molestias iste, atque perspiciatis rem blanditiis,
+            dolor ea ullam, culpa quisquam ad nihil ab dolores aut laboriosam
+            laborum. Neque!
+          </p>
+          <p class="text-gray-700 dark:text-gray-400">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. In magni
+            accusantium soluta, nostrum nemo molestiae fugit? Magni ullam fuga
+            quidem ipsam, nemo dicta
+          </p>
+          <div class="grid grid-cols-2 gap-4 font-semibold">
+            <p>B.E. Computer</p>
+            <p>B.E. Computer</p>
+            <p>B.E. Computer</p>
+            <p>B.E. Computer</p>
+          </div>
+          <p class="text-gray-700 dark:text-gray-400">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta
+            soluta quibusdam commodi obcaecati cumque,
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="flex flex-col gap-10 px-5 sm:px-10 py-10 dark:bg-black">
+      <div class="flex flex-col gap-5 text-center">
+        <button class="bg-gray-500 text-white px-4 py-2 rounded mx-auto">
+          Skills
+        </button>
+        <p class="mx-auto max-w-xl text-gray-700 dark:text-gray-400">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi alias
+          nihil, odit nobis, eaque dist
+        </p>
+      </div>
+      <div
+        class="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-4 dark:invert"
+      >
+        <img src="icon-cypress.svg" alt="" />
+        <img src="icon-express.svg" alt="" />
+        <img src="icon-git.svg" alt="" />
+        <img src="icon-figma.svg" alt="" />
+        <img src="icon-javscript.svg" alt="" />
+        <img src="icon-mongodb.svg" alt="" />
+        <img src="icon-nodejs.svg" alt="" />
+        <img src="icon-postgresql.svg" alt="" />
+        <img src="icon-react.svg" alt="" />
+        <img src="icon-sass.svg" alt="" />
+        <img src="icon-socket.svg" alt="" />
+        <img src="icon-storybook.svg" alt="" />
+        <img src="icon-tailwindcss.svg" alt="" />
+        <img src="icon-typescript.svg" alt="" />
+        <img src="icon-storybook.svg" alt="" />
+        <img src="icon-nest.svg" alt="" />
+      </div>
+    </section>
+
+    <section
+      class="flex flex-col gap-10 px-5 sm:px-10 py-10 bg-gray-300 dark:bg-black transition-colors"
+    >
+      <div class="flex flex-col gap-5 text-center">
+        <button class="bg-gray-500 text-white px-4 py-2 rounded mx-auto">
+          Experience
+        </button>
+        <p class="mx-auto max-w-xl text-gray-700 dark:text-gray-400">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi alias
+          nihil, odit nobis, eaque dist
+        </p>
+      </div>
+
+      <div class="flex flex-col gap-5 lg:gap-10">
+        <div
+          class="bg-white dark:bg-zinc-800 p-5 shadow-lg rounded mx-auto w-full lg:w-3/5 flex flex-col lg:flex-row gap-5"
+        >
+          <div class="flex-1 flex justify-start lg:justify-start">
+            <img
+              src="logo-upwork.png"
+              alt="Upwork"
+              class="w-24 h-12 object-contain"
+            />
+          </div>
+          <div class="flex-1 flex flex-col gap-3">
+            <h3 class="font-bold text-lg">Sr. Frontend Developer</h3>
+            <ul class="list-disc pl-5 text-gray-700 dark:text-gray-300">
+              <li>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Voluptas ctus ipsum doloremque adipisicing elit. Magnam velit
+                impedit et. Dolores consequatur debitis omnis, reprehenderit
+                porro veniam commodi rem sunt iste laboriosam facere quia
+                doloremque vel ducimus aliquam.
+              </li>
+            </ul>
+          </div>
+          <div
+            class="flex justify-start items-start lg:items-start justify-end flex-1"
+          >
+            <p>January 2026</p>
+          </div>
+        </div>
+        <div
+          class="bg-white dark:bg-zinc-800 p-5 shadow-lg rounded mx-auto w-full lg:w-3/5 flex flex-col lg:flex-row gap-5"
+        >
+          <div class="flex-1 flex justify-start lg:justify-start">
+            <img
+              src="logo-upwork.png"
+              alt="Upwork"
+              class="w-24 h-12 object-contain"
+            />
+          </div>
+          <div class="flex-1 flex flex-col gap-3">
+            <h3 class="font-bold text-lg">Sr. Frontend Developer</h3>
+            <ul class="list-disc pl-5 text-gray-700 dark:text-gray-300">
+              <li>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Voluptas ctus ipsum doloremque adipisicing elit. Magnam velit
+                impedit et. Dolores consequatur debitis omnis, reprehenderit
+                porro veniam commodi rem sunt iste laboriosam facere quia
+                doloremque vel ducimus aliquam.
+              </li>
+            </ul>
+          </div>
+          <div
+            class="flex justify-start items-start lg:items-start justify-end flex-1"
+          >
+            <p>January 2026</p>
+          </div>
+        </div>
+        <div
+          class="bg-white dark:bg-zinc-800 p-5 shadow-lg rounded mx-auto w-full lg:w-3/5 flex flex-col lg:flex-row gap-5"
+        >
+          <div class="flex-1 flex justify-start lg:justify-start">
+            <img
+              src="logo-upwork.png"
+              alt="Upwork"
+              class="w-24 h-12 object-contain"
+            />
+          </div>
+          <div class="flex-1 flex flex-col gap-3">
+            <h3 class="font-bold text-lg">Sr. Frontend Developer</h3>
+            <ul class="list-disc pl-5 text-gray-700 dark:text-gray-300">
+              <li>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Voluptas ctus ipsum
+              </li>
+            </ul>
+          </div>
+          <div
+            class="flex justify-start items-start lg:items-start justify-end flex-1"
+          >
+            <p>January 2026</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="flex flex-col gap-10 px-5 sm:px-10 py-10 dark:bg-black">
+      <div class="flex flex-col gap-5 text-center">
+        <button class="bg-gray-500 text-white px-4 py-2 rounded mx-auto">
+          Work
+        </button>
+        <p class="mx-auto max-w-xl text-gray-700 dark:text-gray-400">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+      </div>
+
+      <div class="flex flex-col lg:flex-row gap-5">
+        <div class="flex-1">
+          <img
+            src="Picture.png"
+            alt="Work"
+            class="w-full h-auto object-cover"
+          />
+        </div>
+        <div class="flex-1 flex flex-col gap-5">
+          <h3 class="font-bold text-xl">Fiski</h3>
+          <p class="text-gray-700 dark:text-gray-400">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis rem,
+            ad aliquid eum, obcaecati laborum est doloribus optio suscipit enim
+            inventore iste tempora libero, ea sint nihil vitae eveniet earum.
+          </p>
+          <div
+            class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 w-full"
+          >
+            <button
+              class="bg-gray-400 dark:bg-zinc-700 text-black dark:text-white px-4 py-1 rounded-full"
+            >
+              React
+            </button>
+            <button
+              class="bg-gray-400 dark:bg-zinc-700 text-black dark:text-white px-4 py-1 rounded-full"
+            >
+              Typescript
+            </button>
+            <button
+              class="bg-gray-400 dark:bg-zinc-700 text-black dark:text-white px-4 py-1 rounded-full"
+            >
+              Next.js
+            </button>
+            <button
+              class="bg-gray-400 dark:bg-zinc-700 text-black dark:text-white px-4 py-1 rounded-full"
+            >
+              Tailwind
+            </button>
+            <button
+              class="bg-gray-400 dark:bg-zinc-700 text-black dark:text-white px-4 py-1 rounded-full"
+            >
+              figma
+            </button>
+            <button
+              class="bg-gray-400 dark:bg-zinc-700 text-black dark:text-white px-4 py-1 rounded-full"
+            >
+              git
+            </button>
+            <button
+              class="bg-gray-400 dark:bg-zinc-700 text-black dark:text-white px-4 py-1 rounded-full"
+            >
+              cypress
+            </button>
+            <button
+              class="bg-gray-400 dark:bg-zinc-700 text-black dark:text-white px-4 py-1 rounded-full"
+            >
+              Storybook
+            </button>
+            <button
+              class="bg-gray-400 dark:bg-zinc-700 text-black dark:text-white px-4 py-1 rounded-full"
+            >
+              next js
+            </button>
+            <button
+              class="bg-gray-400 dark:bg-zinc-700 text-black dark:text-white px-4 py-1 rounded-full"
+            >
+              PostgreSQL
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col lg:flex-row gap-5">
+        <div class="flex-1">
+          <img
+            src="Picture.png"
+            alt="Work"
+            class="w-full h-auto object-cover"
+          />
+        </div>
+        <div class="flex-1 flex flex-col gap-5">
+          <h3 class="font-bold text-xl">Fiski</h3>
+          <p class="text-gray-700 dark:text-gray-400">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis rem,
+            ad aliquid eum, obcaecati laborum est doloribus optio suscipit enim
+            inventore iste tempora libero, ea sint nihil vitae eveniet earum.
+          </p>
+          <div
+            class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 w-full"
+          >
+            <button
+              class="bg-gray-400 dark:bg-zinc-700 text-black dark:text-white px-4 py-1 rounded-full"
+            >
+              React
+            </button>
+            <button
+              class="bg-gray-400 dark:bg-zinc-700 text-black dark:text-white px-4 py-1 rounded-full"
+            >
+              Typescript
+            </button>
+            <button
+              class="bg-gray-400 dark:bg-zinc-700 text-black dark:text-white px-4 py-1 rounded-full"
+            >
+              Next.js
+            </button>
+            <button
+              class="bg-gray-400 dark:bg-zinc-700 text-black dark:text-white px-4 py-1 rounded-full"
+            >
+              Tailwind
+            </button>
+            <button
+              class="bg-gray-400 dark:bg-zinc-700 text-black dark:text-white px-4 py-1 rounded-full"
+            >
+              figma
+            </button>
+            <button
+              class="bg-gray-400 dark:bg-zinc-700 text-black dark:text-white px-4 py-1 rounded-full"
+            >
+              git
+            </button>
+            <button
+              class="bg-gray-400 dark:bg-zinc-700 text-black dark:text-white px-4 py-1 rounded-full"
+            >
+              cypress
+            </button>
+            <button
+              class="bg-gray-400 dark:bg-zinc-700 text-black dark:text-white px-4 py-1 rounded-full"
+            >
+              Storybook
+            </button>
+            <button
+              class="bg-gray-400 dark:bg-zinc-700 text-black dark:text-white px-4 py-1 rounded-full"
+            >
+              next js
+            </button>
+            <button
+              class="bg-gray-400 dark:bg-zinc-700 text-black dark:text-white px-4 py-1 rounded-full"
+            >
+              PostgreSQL
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col lg:flex-row gap-5">
+        <div class="flex-1">
+          <img
+            src="Picture.png"
+            alt="Work"
+            class="w-full h-auto object-cover"
+          />
+        </div>
+        <div class="flex-1 flex flex-col gap-5">
+          <h3 class="font-bold text-xl">Fiski</h3>
+          <p class="text-gray-700 dark:text-gray-400">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis rem,
+            ad aliquid eum, obcaecati laborum est doloribus optio suscipit enim
+            inventore iste tempora libero, ea sint nihil vitae eveniet earum.
+          </p>
+          <div
+            class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 w-full"
+          >
+            <button
+              class="bg-gray-400 dark:bg-zinc-700 text-black dark:text-white px-4 py-1 rounded-full"
+            >
+              React
+            </button>
+            <button
+              class="bg-gray-400 dark:bg-zinc-700 text-black dark:text-white px-4 py-1 rounded-full"
+            >
+              Typescript
+            </button>
+            <button
+              class="bg-gray-400 dark:bg-zinc-700 text-black dark:text-white px-4 py-1 rounded-full"
+            >
+              Next.js
+            </button>
+            <button
+              class="bg-gray-400 dark:bg-zinc-700 text-black dark:text-white px-4 py-1 rounded-full"
+            >
+              Tailwind
+            </button>
+            <button
+              class="bg-gray-400 dark:bg-zinc-700 text-black dark:text-white px-4 py-1 rounded-full"
+            >
+              figma
+            </button>
+            <button
+              class="bg-gray-400 dark:bg-zinc-700 text-black dark:text-white px-4 py-1 rounded-full"
+            >
+              git
+            </button>
+            <button
+              class="bg-gray-400 dark:bg-zinc-700 text-black dark:text-white px-4 py-1 rounded-full"
+            >
+              cypress
+            </button>
+            <button
+              class="bg-gray-400 dark:bg-zinc-700 text-black dark:text-white px-4 py-1 rounded-full"
+            >
+              Storybook
+            </button>
+            <button
+              class="bg-gray-400 dark:bg-zinc-700 text-black dark:text-white px-4 py-1 rounded-full"
+            >
+              next js
+            </button>
+            <button
+              class="bg-gray-400 dark:bg-zinc-700 text-black dark:text-white px-4 py-1 rounded-full"
+            >
+              PostgreSQL
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="flex flex-col gap-10 px-5 sm:px-10 py-10 bg-gray-100 dark:bg-black transition-colors"
+    >
+      <div class="flex flex-col gap-5 text-center">
+        <button class="bg-gray-500 text-white px-4 py-2 rounded-full mx-auto">
+          Testimonials
+        </button>
+        <p class="dark:text-gray-300">Nice things people said to me</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div
+          class="bg-white dark:bg-zinc-800 shadow-2xl p-5 flex flex-col gap-3 text-center rounded"
+        >
+          <img
+            src="icon-user.png"
+            alt="User"
+            class="mx-auto w-16 h-16 object-cover"
+          />
+          <p class="text-gray-700 dark:text-gray-400">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint odit
+            doloremque dicta amet unde eaque, aliquam repellat corporis quae,
+            rem temporibus tempora provident similique eum dolores ea nisi dolor
+            inventore!
+          </p>
+          <p class="font-bold text-lg">John Doe</p>
+          <p class="text-sm">Founder xyz</p>
+        </div>
+        <div
+          class="bg-white dark:bg-zinc-800 shadow-2xl p-5 flex flex-col gap-3 text-center rounded"
+        >
+          <img
+            src="icon-user.png"
+            alt="User"
+            class="mx-auto w-16 h-16 object-cover"
+          />
+          <p class="text-gray-700 dark:text-gray-400">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint odit
+            doloremque dicta amet unde eaque, aliquam repellat corporis quae,
+            rem temporibus tempora provident similique eum dolores ea nisi dolor
+            inventore!
+          </p>
+          <p class="font-bold text-lg">John Doe</p>
+          <p class="text-sm">Founder xyz</p>
+        </div>
+        <div
+          class="bg-white dark:bg-zinc-800 shadow-2xl p-5 flex flex-col gap-3 text-center rounded"
+        >
+          <img
+            src="icon-user.png"
+            alt="User"
+            class="mx-auto w-16 h-16 object-cover"
+          />
+          <p class="text-gray-700 dark:text-gray-400">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint odit
+            doloremque dicta amet unde eaque, aliquam repellat corporis quae,
+            rem temporibus tempora provident similique eum dolores ea nisi dolor
+            inventore!
+          </p>
+          <p class="font-bold text-lg">John Doe</p>
+          <p class="text-sm">Founder xyz</p>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="flex flex-col gap-10 px-5 sm:px-10 py-10 bg-gray-100 dark:bg-black transition-colors"
+    >
+      <div class="flex flex-col gap-5 text-center">
+        <button class="bg-gray-500 text-white px-4 py-2 rounded-full mx-auto">
+          Contact
+        </button>
+        <p class="mx-auto max-w-xl text-gray-700 dark:text-gray-400">
+          Lorem ipsum dolor sit amet consectetur.
+        </p>
+        <div
+          class="flex flex-col sm:flex-row justify-center gap-4 text-xl font-bold"
+        >
+          <div class="flex items-center gap-2">
+            <i class="fa-regular fa-envelope"></i> Farhadali@gmail.com
+          </div>
+          <br />
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-phone"></i> 03135215047
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const themeBtn = document.getElementById("para");
+      const themeText = document.getElementById("text1");
+      const htmlElement = document.documentElement;
+
+      themeBtn.addEventListener("click", function () {
+        if (htmlElement.classList.contains("dark")) {
+          htmlElement.classList.remove("dark");
+          themeText.innerText = "🌙";
+        } else {
+          htmlElement.classList.add("dark");
+          themeText.innerText = "☀️";
+        }
+      });
+    </script>
+  </body>
+</html>
